@@ -1,404 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English3 – Self-Directed Learning Portfolio</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>English3 – Self-Directed Learning Portfolio</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
 
-    <!-- Main Header with University Branding -->
-    <header class="main-header">
-        <div class="university-branding">
-            <div class="portfolio-title">
-                <h1>English3 Portfolio</h1>
-            </div>
-        </div>
+<!-- Header -->
+<header class="main-header">
 
-        <!-- Student Photo Upload Component -->
-        <div class="profile-section">
-            <div class="photo-container">
-                <img id="profile-preview" src="https://picsum.photos/seed/student/120/120" alt="Student Photo">
-            </div>
-            <label for="photo-upload" class="upload-btn">Upload Photo</label>
-            <input type="file" id="photo-upload" accept="image/*">
-        </div>
-    </header>
+<div class="portfolio-title">
+<h1>English3 Portfolio</h1>
+</div>
 
-    <!-- Student Information Card (Removed from top) -->
-    <div class="student-info-card" style="display: none;">
-    </div>
+<div class="profile-section">
 
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="nav-container">
-            <div class="nav-tabs">
-                <button class="tab-btn active" data-tab="home">Inicio</button>
-                <button class="tab-btn" data-tab="task1">Task 1</button>
-                <button class="tab-btn" data-tab="task2">Task 2</button>
-                <button class="tab-btn" data-tab="task4">Task 4</button>
-                <button class="tab-btn" data-tab="task6">Task 6</button>
-                <button class="tab-btn" data-tab="task8">Task 8</button>
-            </div>
-        </div>
-    </nav>
+<div class="photo-container">
+<img id="profile-preview" src="https://picsum.photos/seed/student/120/120" alt="Student Photo">
+</div>
 
-    <main>
-        <!-- Home / Inicio Content -->
-        <div id="home" class="tab-content active">
-            <div class="welcome-container">
-                <div class="cat-mascot">
-                    <div class="speech-bubble">¡Hola! 👋</div>
-                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Felix&backgroundColor=b6e3f4" alt="Cat Mascot" class="cat-img">
-                </div>
-                
-                <div class="welcome-text">
-                    <h2>Bienvenido a mi Portafolio</h2>
-                    <p>Soy Yeison, y este es mi espacio de aprendizaje para English III.</p>
-                </div>
-            </div>
+<label for="photo-upload" class="upload-btn">
+Upload Photo
+</label>
 
-            <!-- Student Information Card (Moved here) -->
-            <div class="student-info-section">
-                <div class="info-glass-card">
-                    <div class="info-block">
-                        <div class="info-icon">👤</div>
-                        <div class="info-text">
-                            <span>Student Name</span>
-                            <p>Yeison Quintana Tellez</p>
-                        </div>
-                    </div>
-                    <div class="info-block">
-                        <div class="info-icon">👥</div>
-                        <div class="info-text">
-                            <span>Group</span>
-                            <p>518008_72</p>
-                        </div>
-                    </div>
-                    <div class="info-block">
-                        <div class="info-icon">🎓</div>
-                        <div class="info-text">
-                            <span>Program</span>
-                            <p>Licenciatura en Lenguas Extranjeras</p>
-                        </div>
-                    </div>
-                    <div class="info-block">
-                        <div class="info-icon">📚</div>
-                        <div class="info-text">
-                            <span>Course</span>
-                            <p>English III (518008)</p>
-                        </div>
-                    </div>
-                    <div class="info-block">
-                        <div class="info-icon">🏛️</div>
-                        <div class="info-text">
-                            <span>University</span>
-                            <p>UNAD</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<input type="file" id="photo-upload" accept="image/*">
 
-        <!-- Task 1 Content -->
-        <div id="task1" class="tab-content">
-            
-            <!-- Task 1 Sub-menu -->
-            <div class="task-submenu">
-                <a href="#self-reflection" class="submenu-link active">Checklist</a>
-                <a href="#reflection-text" class="submenu-link">Reflection</a>
-                <a href="#smart-goals" class="submenu-link">Goals</a>
-                <a href="#study-schedule" class="submenu-link">Schedule</a>
-                <a href="#portfolio-link" class="submenu-link">Portfolio</a>
-            </div>
+</div>
 
-            <!-- Section 1: Self Reflection Checklist -->
-            <section id="self-reflection">
-                <h2>Self Reflection – CEFR B1 Self Assessment</h2>
-                <div class="card">
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Category</th>
-                                    <th>Assessment</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Listening</td>
-                                    <td>
-                                        <div class="radio-group">
-                                            <label class="radio-option"><input type="radio" name="listening" value="yes" class="checklist-radio"> ✅ Yes</label>
-                                            <label class="radio-option"><input type="radio" name="listening" value="sometimes" class="checklist-radio"> ➖ Sometimes</label>
-                                            <label class="radio-option"><input type="radio" name="listening" value="not-yet" class="checklist-radio"> ❌ Not yet</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Reading</td>
-                                    <td>
-                                        <div class="radio-group">
-                                            <label class="radio-option"><input type="radio" name="reading" value="yes" class="checklist-radio"> ✅ Yes</label>
-                                            <label class="radio-option"><input type="radio" name="reading" value="sometimes" class="checklist-radio"> ➖ Sometimes</label>
-                                            <label class="radio-option"><input type="radio" name="reading" value="not-yet" class="checklist-radio"> ❌ Not yet</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Speaking Interaction</td>
-                                    <td>
-                                        <div class="radio-group">
-                                            <label class="radio-option"><input type="radio" name="speaking-i" value="yes" class="checklist-radio"> ✅ Yes</label>
-                                            <label class="radio-option"><input type="radio" name="speaking-i" value="sometimes" class="checklist-radio"> ➖ Sometimes</label>
-                                            <label class="radio-option"><input type="radio" name="speaking-i" value="not-yet" class="checklist-radio"> ❌ Not yet</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Speaking Production</td>
-                                    <td>
-                                        <div class="radio-group">
-                                            <label class="radio-option"><input type="radio" name="speaking-p" value="yes" class="checklist-radio"> ✅ Yes</label>
-                                            <label class="radio-option"><input type="radio" name="speaking-p" value="sometimes" class="checklist-radio"> ➖ Sometimes</label>
-                                            <label class="radio-option"><input type="radio" name="speaking-p" value="not-yet" class="checklist-radio"> ❌ Not yet</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Writing</td>
-                                    <td>
-                                        <div class="radio-group">
-                                            <label class="radio-option"><input type="radio" name="writing" value="yes" class="checklist-radio"> ✅ Yes</label>
-                                            <label class="radio-option"><input type="radio" name="writing" value="sometimes" class="checklist-radio"> ➖ Sometimes</label>
-                                            <label class="radio-option"><input type="radio" name="writing" value="not-yet" class="checklist-radio"> ❌ Not yet</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Learning Strategies</td>
-                                    <td>
-                                        <div class="radio-group">
-                                            <label class="radio-option"><input type="radio" name="strategies" value="yes" class="checklist-radio"> ✅ Yes</label>
-                                            <label class="radio-option"><input type="radio" name="strategies" value="sometimes" class="checklist-radio"> ➖ Sometimes</label>
-                                            <label class="radio-option"><input type="radio" name="strategies" value="not-yet" class="checklist-radio"> ❌ Not yet</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+</header>
 
-                    <!-- Results & Progress -->
-                    <div class="stats-container">
-                        <div class="stat-item">
-                            <div class="stat-value" id="yes-total">0</div>
-                            <div class="stat-label">Yes Total</div>
-                            <div class="progress-wrapper">
-                                <div class="progress-bar"><div id="yes-progress" class="progress-fill"></div></div>
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value" id="sometimes-total">0</div>
-                            <div class="stat-label">Sometimes Total</div>
-                            <div class="progress-wrapper">
-                                <div class="progress-bar"><div id="sometimes-progress" class="progress-fill sometimes"></div></div>
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value" id="not-yet-total">0</div>
-                            <div class="stat-label">Not yet Total</div>
-                            <div class="progress-wrapper">
-                                <div class="progress-bar"><div id="not-yet-progress" class="progress-fill not-yet"></div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<!-- Navigation -->
+<nav>
 
-            <!-- Section 2: My Reflection -->
-            <section id="reflection-text">
-                <h2>My Reflection</h2>
-                <div class="card">
-                    <div class="editable-text" contenteditable="true">
-                        "I consider myself a responsible and committed English learner. As a student of a bachelor’s degree in foreign Languages, English is very important for my academic and professional future. My strongest skill is reading because I can understand academic texts more easily. However, my speaking is weaker than my reading, and I sometimes feel insecure when I speak. My grammar and vocabulary are not as strong as they should be. I believe speaking is the most challenging skill for me, but I am motivated to improve it."
-                    </div>
-                    <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 1rem; font-style: italic;">* Click text above to edit</p>
-                </div>
-            </section>
+<div class="nav-container">
 
-            <!-- Section 3: SMART Goals -->
-            <section id="smart-goals">
-                <h2>SMART Goals</h2>
-                <div class="goals-grid">
-                    <!-- Goal 1 -->
-                    <div class="card goal-card">
-                        <div class="goal-header">
-                            <h3>Goal 1: Vocabulary improvement</h3>
-                            <span class="goal-icon">▼</span>
-                        </div>
-                        <div class="goal-details">
-                            <ul class="smart-list">
-                                <li><b>Specific:</b> Learn 50 new academic words related to my field.</li>
-                                <li><b>Measurable:</b> Weekly quiz using flashcards.</li>
-                                <li><b>Achievable:</b> Study 10 words per day, 5 days a week.</li>
-                                <li><b>Relevant:</b> Essential for reading academic papers.</li>
-                                <li><b>Time-bound:</b> Achieve this by the end of the month.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Goal 2 -->
-                    <div class="card goal-card">
-                        <div class="goal-header">
-                            <h3>Goal 2: Grammar improvement</h3>
-                            <span class="goal-icon">▼</span>
-                        </div>
-                        <div class="goal-details">
-                            <ul class="smart-list">
-                                <li><b>Specific:</b> Master the use of conditional sentences (Type 1 & 2).</li>
-                                <li><b>Measurable:</b> Complete 10 grammar exercises with 90% accuracy.</li>
-                                <li><b>Achievable:</b> Watch 2 tutorial videos and practice with online tools.</li>
-                                <li><b>Relevant:</b> Necessary for more complex writing and speaking.</li>
-                                <li><b>Time-bound:</b> Complete within the next two weeks.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Goal 3 -->
-                    <div class="card goal-card">
-                        <div class="goal-header">
-                            <h3>Goal 3: Speaking fluency</h3>
-                            <span class="goal-icon">▼</span>
-                        </div>
-                        <div class="goal-details">
-                            <ul class="smart-list">
-                                <li><b>Specific:</b> Participate in at least one conversation club session.</li>
-                                <li><b>Measurable:</b> Speak for at least 5 minutes during the session.</li>
-                                <li><b>Achievable:</b> Prepare common topics in advance to feel more confident.</li>
-                                <li><b>Relevant:</b> Overcoming insecurity is my biggest challenge.</li>
-                                <li><b>Time-bound:</b> Do this by next Friday.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<div class="nav-tabs">
 
-            <!-- Section 4: Weekly Study Schedule -->
-            <section id="study-schedule">
-                <h2>Weekly Study Schedule</h2>
-                <div class="card">
-                    <div class="table-container">
-                        <table class="schedule-table">
-                            <thead>
-                                <tr>
-                                    <th>Day</th>
-                                    <th>Start time</th>
-                                    <th>End time</th>
-                                    <th>Resources</th>
-                                    <th>Activities</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Monday</td>
-                                    <td><input type="text" value="08:00 AM" class="schedule-input"></td>
-                                    <td><input type="text" value="09:30 AM" class="schedule-input"></td>
-                                    <td><input type="text" value="Duolingo / BBC Learning" class="schedule-input"></td>
-                                    <td><input type="text" value="Vocabulary & Listening" class="schedule-input"></td>
-                                </tr>
-                                <tr>
-                                    <td>Tuesday</td>
-                                    <td><input type="text" value="02:00 PM" class="schedule-input"></td>
-                                    <td><input type="text" value="03:30 PM" class="schedule-input"></td>
-                                    <td><input type="text" value="Grammar Book / YouTube" class="schedule-input"></td>
-                                    <td><input type="text" value="Verb Tenses Practice" class="schedule-input"></td>
-                                </tr>
-                                <tr>
-                                    <td>Wednesday</td>
-                                    <td><input type="text" value="10:00 AM" class="schedule-input"></td>
-                                    <td><input type="text" value="11:30 AM" class="schedule-input"></td>
-                                    <td><input type="text" value="English Podcasts" class="schedule-input"></td>
-                                    <td><input type="text" value="Listening Comprehension" class="schedule-input"></td>
-                                </tr>
-                                <tr>
-                                    <td>Thursday</td>
-                                    <td><input type="text" value="04:00 PM" class="schedule-input"></td>
-                                    <td><input type="text" value="05:30 PM" class="schedule-input"></td>
-                                    <td><input type="text" value="Medium Articles" class="schedule-input"></td>
-                                    <td><input type="text" value="Reading & Summarizing" class="schedule-input"></td>
-                                </tr>
-                                <tr>
-                                    <td>Friday</td>
-                                    <td><input type="text" value="09:00 AM" class="schedule-input"></td>
-                                    <td><input type="text" value="10:30 AM" class="schedule-input"></td>
-                                    <td><input type="text" value="Conversation Exchange" class="schedule-input"></td>
-                                    <td><input type="text" value="Speaking Practice" class="schedule-input"></td>
-                                </tr>
-                                <tr>
-                                    <td>Saturday</td>
-                                    <td><input type="text" value="11:00 AM" class="schedule-input"></td>
-                                    <td><input type="text" value="12:30 PM" class="schedule-input"></td>
-                                    <td><input type="text" value="Netflix / Movies" class="schedule-input"></td>
-                                    <td><input type="text" value="Watching with Subtitles" class="schedule-input"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 1rem; font-style: italic;">* Click any cell to edit schedule</p>
-                </div>
-            </section>
+<button class="tab-btn active" data-tab="home">Inicio</button>
+<button class="tab-btn" data-tab="task1">Task 1</button>
+<button class="tab-btn" data-tab="task2">Task 2</button>
+<button class="tab-btn" data-tab="task4">Task 4</button>
+<button class="tab-btn" data-tab="task6">Task 6</button>
+<button class="tab-btn" data-tab="task8">Task 8</button>
 
-            <!-- Section 5: Online Portfolio -->
-            <section id="portfolio-link">
-                <h2>Online Portfolio</h2>
-                <div class="portfolio-btn-container">
-                    <a href="https://sites.google.com/view/yeisonquintana/inicio" target="_blank" class="portfolio-btn">
-                        <span>Visit My Portfolio</span>
-                        <i>🚀</i>
-                    </a>
-                </div>
-            </section>
+</div>
 
-        </div>
+</div>
 
-        <!-- Other Tabs (Coming Soon) -->
-        <div id="task2" class="tab-content">
-            <div class="coming-soon">
-                <i>📅</i>
-                <h2>Task 2</h2>
-                <p>Content coming soon</p>
-            </div>
-        </div>
-        <div id="task4" class="tab-content">
-            <div class="coming-soon">
-                <i>📅</i>
-                <h2>Task 4</h2>
-                <p>Content coming soon</p>
-            </div>
-        </div>
-        <div id="task6" class="tab-content">
-            <div class="coming-soon">
-                <i>📅</i>
-                <h2>Task 6</h2>
-                <p>Content coming soon</p>
-            </div>
-        </div>
-        <div id="task8" class="tab-content">
-            <div class="coming-soon">
-                <i>📅</i>
-                <h2>Task 8</h2>
-                <p>Content coming soon</p>
-            </div>
-        </div>
-    </main>
+</nav>
 
-    <!-- Script -->
-    <script src="script.js"></script>
-    <script type="module" src="/index.tsx"></script>
+<main>
+
+<!-- HOME -->
+
+<div id="home" class="tab-content active">
+
+<div class="welcome-container">
+
+<div class="cat-mascot">
+
+<div class="speech-bubble">
+¡Hola! 👋
+</div>
+
+<img
+src="https://api.dicebear.com/7.x/bottts/svg?seed=Felix&backgroundColor=b6e3f4"
+alt="Cat Mascot"
+class="cat-img">
+
+</div>
+
+<div class="welcome-text">
+
+<h2>Bienvenido a mi Portafolio</h2>
+
+<p>
+Soy Yeison, y este es mi espacio de aprendizaje para English III.
+</p>
+
+</div>
+
+</div>
+
+<!-- Student Information -->
+
+<div class="student-info-section">
+
+<div class="info-glass-card">
+
+<div class="info-block">
+<div class="info-icon">👤</div>
+<div class="info-text">
+<span>Student Name</span>
+<p>Yeison Quintana Tellez</p>
+</div>
+</div>
+
+<div class="info-block">
+<div class="info-icon">👥</div>
+<div class="info-text">
+<span>Group</span>
+<p>518008_72</p>
+</div>
+</div>
+
+<div class="info-block">
+<div class="info-icon">🎓</div>
+<div class="info-text">
+<span>Program</span>
+<p>Licenciatura en Lenguas Extranjeras</p>
+</div>
+</div>
+
+<div class="info-block">
+<div class="info-icon">📚</div>
+<div class="info-text">
+<span>Course</span>
+<p>English III (518008)</p>
+</div>
+</div>
+
+<div class="info-block">
+<div class="info-icon">🏛️</div>
+<div class="info-text">
+<span>University</span>
+<p>UNAD</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TASK 1 -->
+
+<div id="task1" class="tab-content">
+
+<!-- Submenu -->
+
+<div class="task-submenu">
+
+<a href="#self-reflection" class="submenu-link active">Checklist</a>
+<a href="#reflection-text" class="submenu-link">Reflection</a>
+<a href="#smart-goals" class="submenu-link">Goals</a>
+<a href="#study-schedule" class="submenu-link">Schedule</a>
+<a href="#portfolio-link" class="submenu-link">Portfolio</a>
+
+</div>
+
+<!-- Self Reflection -->
+
+<section id="self-reflection">
+
+<h2>Self Reflection – CEFR B1 Self Assessment</h2>
+
+<div class="card">
+
+<div class="table-container">
+
+<table>
+
+<thead>
+<tr>
+<th>Category</th>
+<th>Assessment</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Listening</td>
+<td>
+<label><input type="radio" name="listening" class="checklist-radio" value="yes"> ✅ Yes</label>
+<label><input type="radio" name="listening" class="checklist-radio" value="sometimes"> ➖ Sometimes</label>
+<label><input type="radio" name="listening" class="checklist-radio" value="not-yet"> ❌ Not yet</label>
+</td>
+</tr>
+
+<tr>
+<td>Reading</td>
+<td>
+<label><input type="radio" name="reading" class="checklist-radio" value="yes"> ✅ Yes</label>
+<label><input type="radio" name="reading" class="checklist-radio" value="sometimes"> ➖ Sometimes</label>
+<label><input type="radio" name="reading" class="checklist-radio" value="not-yet"> ❌ Not yet</label>
+</td>
+</tr>
+
+<tr>
+<td>Speaking Interaction</td>
+<td>
+<label><input type="radio" name="speaking-i" class="checklist-radio" value="yes"> ✅ Yes</label>
+<label><input type="radio" name="speaking-i" class="checklist-radio" value="sometimes"> ➖ Sometimes</label>
+<label><input type="radio" name="speaking-i" class="checklist-radio" value="not-yet"> ❌ Not yet</label>
+</td>
+</tr>
+
+<tr>
+<td>Speaking Production</td>
+<td>
+<label><input type="radio" name="speaking-p" class="checklist-radio" value="yes"> ✅ Yes</label>
+<label><input type="radio" name="speaking-p" class="checklist-radio" value="sometimes"> ➖ Sometimes</label>
+<label><input type="radio" name="speaking-p" class="checklist-radio" value="not-yet"> ❌ Not yet</label>
+</td>
+</tr>
+
+<tr>
+<td>Writing</td>
+<td>
+<label><input type="radio" name="writing" class="checklist-radio" value="yes"> ✅ Yes</label>
+<label><input type="radio" name="writing" class="checklist-radio" value="sometimes"> ➖ Sometimes</label>
+<label><input type="radio" name="writing" class="checklist-radio" value="not-yet"> ❌ Not yet</label>
+</td>
+</tr>
+
+<tr>
+<td>Learning Strategies</td>
+<td>
+<label><input type="radio" name="strategies" class="checklist-radio" value="yes"> ✅ Yes</label>
+<label><input type="radio" name="strategies" class="checklist-radio" value="sometimes"> ➖ Sometimes</label>
+<label><input type="radio" name="strategies" class="checklist-radio" value="not-yet"> ❌ Not yet</label>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Reflection -->
+
+<section id="reflection-text">
+
+<h2>My Reflection</h2>
+
+<div class="card">
+
+<div class="editable-text" contenteditable="true">
+
+I consider myself a responsible and committed English learner. As a student of a bachelor’s degree in foreign Languages, English is very important for my academic and professional future. My strongest skill is reading because I can understand academic texts more easily. However, my speaking is weaker than my reading, and I sometimes feel insecure when I speak. My grammar and vocabulary are not as strong as they should be. I believe speaking is the most challenging skill for me, but I am motivated to improve it.
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Portfolio -->
+
+<section id="portfolio-link">
+
+<h2>Online Portfolio</h2>
+
+<div class="portfolio-btn-container">
+
+<a
+href="https://sites.google.com/view/yeisonquintana/inicio"
+target="_blank"
+class="portfolio-btn">
+
+Visit My Portfolio 🚀
+
+</a>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- OTHER TASKS -->
+
+<div id="task2" class="tab-content">
+<div class="coming-soon">
+<h2>Task 2</h2>
+<p>Content coming soon</p>
+</div>
+</div>
+
+<div id="task4" class="tab-content">
+<div class="coming-soon">
+<h2>Task 4</h2>
+<p>Content coming soon</p>
+</div>
+</div>
+
+<div id="task6" class="tab-content">
+<div class="coming-soon">
+<h2>Task 6</h2>
+<p>Content coming soon</p>
+</div>
+</div>
+
+<div id="task8" class="tab-content">
+<div class="coming-soon">
+<h2>Task 8</h2>
+<p>Content coming soon</p>
+</div>
+</div>
+
+</main>
+
+<!-- Script -->
+<script src="script.js"></script>
+
 </body>
 </html>
