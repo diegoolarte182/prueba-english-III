@@ -81,6 +81,57 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Task 1 Sub-menu Navigation ---
+    const submenuLinks = document.querySelectorAll('.submenu-link');
+    const sections = document.querySelectorAll('#task1 section');
+
+    submenuLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            
+            if (targetSection) {
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const submenuHeight = document.querySelector('.task-submenu').offsetHeight;
+                const offset = navHeight + submenuHeight + 20;
+
+                window.scrollTo({
+                    top: targetSection.offsetTop - offset,
+                    behavior: 'smooth'
+                });
+
+                // Update active link
+                submenuLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // Update sub-menu active state on scroll
+    window.addEventListener('scroll', () => {
+        if (document.getElementById('task1').classList.contains('active')) {
+            let current = "";
+            const navHeight = document.querySelector('nav').offsetHeight;
+            const submenuHeight = document.querySelector('.task-submenu').offsetHeight;
+            const offset = navHeight + submenuHeight + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - offset) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            submenuLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+
     // --- Profile Photo Upload ---
     const photoUpload = document.getElementById('photo-upload');
     const profilePreview = document.getElementById('profile-preview');
